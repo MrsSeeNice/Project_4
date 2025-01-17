@@ -5,9 +5,8 @@ const app = express();
 
 app.use(cors({ origin: "http://localhost:3000" }));
 
-app.use ('/user', userRouts)
-app.get ('/', (req, res )=> {
-  res.send ("This is main Page")
+app.use ('/user', userRouts) app.get ('/', (req, res )=> {
+  res.send ("Favorite Color Main Page")
 })
 
 app.listen ('3002', ()=> {
