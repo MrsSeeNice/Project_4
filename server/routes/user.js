@@ -7,7 +7,7 @@ Router.get ("/", (req,res)=> {
    const {username, password} = req.query
    console.log(username)
    console.log(password)
-   console.log ("haha")
+  
     db.query ("SELECT * FROM users WHERE username= ? AND password= ?", [username, password], (err,result)=> {
       if (err) {
         console.log ("Error in Finding User:", err)
